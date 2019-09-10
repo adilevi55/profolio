@@ -6,20 +6,21 @@ body{
     height: 250px;
     width: 200px;
 }
-
-
- .container *{
-     margin-top: 2%
+.container *{
+     margin-top: 2%;
  }
-
  a{
      color: black;
      margin: 1%;
  }
- p{
-     margin-left: 25%;
-     margin-right: 25%
+ .card{
+     margin: 1%;
  }
- #input{
-     display: none;
- }
+#aboutMyP{
+    margin-left: 25%;
+    margin-right: 25%
+}
+
+
+
+
