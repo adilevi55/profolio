@@ -1,19 +1,18 @@
 
-function a () {
-    let a = window.location.toString();
-
+function copyUrl () {
+    let url = window.location.toString();
    // Create new element
-   var el = document.createElement('textarea');
+   var fakeInput = document.createElement('textarea');
    // Set value (string to be copied)
-   el.value = a;
+   fakeInput.value = url;
    // Set non-editable to avoid focus and move outside of view
-   el.setAttribute('readonly', '');
-   el.style = {position: 'absolute', left: '-9999px'};
-   document.body.appendChild(el);
+   fakeInput.setAttribute('readonly', '');
+   fakeInput.style = {position: 'absolute', left: '-9999px'};
+   document.body.appendChild(fakeInput);
    // Select text inside element
-   el.select();
+   fakeInput.select();
    // Copy text to clipboard
    document.execCommand('copy');
    // Remove temporary element
-   document.body.removeChild(el);
+   document.body.removeChild(fakeInput);
 }
