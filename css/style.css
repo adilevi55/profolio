@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+#aboutMyImg{
+    border-radius: 80%;
+    height: 250px;
+    width: 200px;
+}
+
+
+ .container *{
+     margin-top: 2%
+ }
+
+ a{
+     color: black;
+     margin: 1%;
+ }
+ p{
+     margin-left: 25%;
+     margin-right: 25%
+ }
+ #input{
+     display: none;
+ }
