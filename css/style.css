@@ -1,10 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+*{
+    box-sizing:border-box;
+}
 body{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    width:100%;
+}
+.navbar-brand{
+    margin: 0;
+}
+.card{
+    border: none;
     text-align: center;
 }
+.card img{
+    width: 100%;
+    height:90%;
+}
+
+
 #aboutMyImg{
     border-radius: 80%;
-    height: 250px;
-    width: 200px;
+    width: 40%;
 }
 .container *{
      margin-top: 2%;
@@ -20,7 +39,125 @@ body{
     margin-left: 25%;
     margin-right: 25%
 }
+.contact-section-main-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0;
+}
+.contact-section-main-list-item{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#skillsSection{
+    margin-bottom:15px;
+}
+.nav-bar{
+    position:fixed;
+    z-index: 2;
+    font-weight: bold;
+    width:100%;
+}
+.first-header{
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.first-header h1{
+    text-align: center;
+}
+.background-first-header{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../assets/image/first-header-background-img.jpg") center center;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+}
+.first-header h1 {
+    color:#ffffff;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+	text-shadow: 3px 2px #1565c0, 0 3px #777;
+}
+.sections-header-h1{
+    background-color:#1565c0;
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+}
+.contact-section-main-list-item i {
+    padding:10px;
+    background-color: #e3f2fd;
+    border-radius:50%;
+}
+.contact-section-main-list-item a{
+    color:#2962ff;
+}
+.project-card img{
+    width: 100%;
+    height:100%;
+}
+.project-card-btn-disabled{
+    margin-top: 1%;
+}
+#skillsSection{
+    margin-top:50px;
+}
+@media only screen and (max-width: 600px) {
+    .contact-section-main-list-item{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-section-main-list-item i {
+        padding:10px;
+        background-color: #e3f2fd;
+        border-radius:50%;
+    }
+    
+    .contact-section-main-list-item a{
+        color:#2962ff;
+    }
 
+  }
+  @media only screen and (min-width: 700px) {
+    #aboutMyImg{
+        width: 25%;
+    }
 
-
-
+   
+  }
+  @media only screen and (min-width: 1400px) {
+   p,a,h1,h3,button{
+    font-size: 1.3em;
+   }
+   h1{
+    font-size: 3em;
+   }
+   #skillsSection{
+    margin-bottom:30px;
+}
+i{
+    transform: scale(1.6);
+}
+   .navbar-brand img{
+       width:4em
+   }
+   #aboutMyImg{
+    width: 15%;
+    }  
+  }

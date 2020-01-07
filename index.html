@@ -6,120 +6,281 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adi lEVI</title>
-    <link rel="icon" href="./assets/image/aboutMy.jpg" type="image/gif" sizes="16x16">
+    <link rel="icon" href="./assets/image/favicon.png" type="image/gif" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/75c8984051.js"></script>
+    
+<link rel="stylesheet" href="./css/style.css">
     <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="col-sm d-flex justify-content-start">
-            <!-- linkedin -->
-            <a href="https://www.linkedin.com/in/adi-levi-3585a2188" class="fa fa-linkedin-square"
-                style="font-size:36px"></a>
-            <!-- github -->
-            <a href="https://github.com/adilevi55" class="fa fa-github" style="font-size:36px"></a>
-            <!-- resume -->
-            <a class="fa fa-file-pdf-o" style="font-size:24px" target="_blank"
-                href="./assets/pdf/עדי לוי - קורות חיים.pdf">
-                Resume
-            </a>
-            <button class="btn btn-light" onclick="copyUrl()"><i class="fa fa-copy" style="font-size:24px"></i>
-             URL
-            </button>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-bar" style="background-color: #29b6f6;">
+        <a class="navbar-brand" href="http://levi-adi.com/">
+            <img src="assets/image/logo.png" width="80px" alt="http://levi-adi.com/">
+          </a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+       
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutSection">ABOUT <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projectsSection">PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skillsSection">SKILLS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactSection">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"target="_blank"
+                    href="./assets/pdf/עדי לוי - קורות חיים.pdf">RESUME</a>
+                  </li>
+
+              </ul>
+          </div>
         </div>
-        <div id="aboutMeDiv" class="container-fluid ">
+      </nav>
+   
 
-            <div class="row d-flex justify-content-center">
-                <h1>About me</h1>
+  
+      
+      <header class="first-header">
+          <div class="background-first-header"></div>
+          <h1>Hello, I am junior full stack web developer in growth.</h1>
+      </header>
+
+      <section id="aboutSection">
+          <header>
+            <h1 class="sections-header-h1">About Me</h1>
+          </header>
+          <main>
+            <div id="aboutMeDiv" class="container-fluid ">
+
+                <div class="row d-flex justify-content-center">
+                </div>
+                <div class="row  d-flex justify-content-center">
+                    <img id="aboutMyImg" src="./assets/image/aboutMy.jpg">
+                </div>
+                <div id="aboutMyP" class="row d-flex justify-content-center">
+                    <p>
+                        Hello, I am junior full stack web developer in growth.<br>
+                        Excelled the Full-Stack Web Development course at John Bryce (by matrix)<br>
+                        I liked the projects in the course because  solving problems is my ambition
+                    </p>
+    
+                </div>
             </div>
-            <div class="row  d-flex justify-content-center">
-                <!-- d-flex justify-content-between container-fluid -->
-                <img id="aboutMyImg" src="./assets/image/aboutMy.jpg">
-            </div>
-            <div id="aboutMyP" class="row d-flex justify-content-center">
-                <p>
-                    Hello, My name is Adi Levi,
-                    I am junior full stack web developer in growth.
-                    I am 25 years old from Israel Petah Tikva.
-                    Excelled the Full-Stack Web Development course at John Bryce (by matrix) - A ten-month immersive
-                    course,
-                    during which we learned to master a variety of both back and front end technologies.
-                    I learned face and back languages.
-                    Likes : HTML5, CSS3, Javascript (ES6), PHP, TypeScript,Bootstrap, JQuey, JSON, AJAX, Angular 5, Node.js, MySQL, MonogDB (mongoose).
-                    I liked the projects in the course because  solving problems is my ambition
-                </p>
-
-            </div>
-        </div>
-
-
-        <h1>Projects</h1>
-        <div class="container">
-            <div class="row  d-flex justify-content-center">
-                <div class="card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" style="width: 18rem;">
-                    <a href="https://adilevi55.github.io/Todo/"> <img src="./assets/image/todo.png"
-                            class="card-img-top"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Todo</h5>
-                        <p class="card-text">in this website you can and add and delete task.<br>
-                        You can drag and drop tasks , marking the tasks and the task saving in the localstorage.
-                        Angualr5, Angualr Material ,html5, css
-                         </p>
-                        <a href="https://github.com/adilevi55/todo-list" class="fa fa-github"
-                            style="font-size:24px"></a>
-                        <a href="https://adilevi55.github.io/Todo/" class="fa fa-external-link"></a>
+          </main>
+      </section>
+      
+      <section id="projectsSection">
+          <header>
+              <h1 class="sections-header-h1">My Projects</h1>
+          </header>
+          <main>
+            <div class="container">
+                
+                <div class="row project-card">
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/image/todo.png">
 
                     </div>
+                    <div class="project-card-text col-12 col-md-6">
+                        <h3>Todo</h3>
+                        <p>
+                            in this website you can and add and delete task.<br>
+                            You can drag and drop tasks , marking the tasks and the task saving in the localstorage.
+                            Angualr5, Angualr Material ,html5, css
+                        </p>
+                        <div class="project-card-buttons">
+                            <a href="https://github.com/adilevi55/todo-list" target="_blank" class="btn  btn-primary">Live Privue</a>
+                            <a  href="https://adilevi55.github.io/Todo/" target="_blank" class="btn  btn-info">View Code</a>
+                        </div>
+                    </div>
                 </div>
+                
+                
+                <div class="row project-card">
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/image/coin.png">
 
-                <div class="card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" style="width: 18rem;">
-                    <a href="https://adilevi55.github.io/Api-Finance/index.html"> <img src="./assets/image/coin.png"
-                            class="card-img-top">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Coins</h5>
-                        <p class="card-text">this site provides information andreports from the world of virtual trade.
+                    </div>
+                    <div class="project-card-text col-12 col-md-6">
+                        <h3>Coins</h3>
+                        <p>
+                            this site provides information andreports from the world of virtual trade.
                             this site provides information andreports from the world of virtual trade.<br>
                             jquery, html5, css
                         </p>
-                        <a href="https://github.com/adilevi55/Api-Finance" class="fa fa-github"
-                            style="font-size:24px"></a>
-                        <a href="https://adilevi55.github.io/Api-Finance/index.html" class="fa fa-external-link"></a>
+                        <div class="project-card-buttons">
+                            <a href="https://github.com/adilevi55/Api-Finance" target="_blank" class="btn  btn-primary">Live Privue</a>
+                         <a href="https://adilevi55.github.io/Api-Finance/index.html" target="_blank" class="btn  btn-info">View Code</a>
+                         </div>
                     </div>
                 </div>
 
-                <div class="card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" style="width: 18rem;">
-                    <img src="..." class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Youtube Playlist</h5>
-                        <p class="card-text">in this website you can register login, create youtube playlist delete youtube playlist.
-                            php, html5, css, mysql</p>
-                        <a href="https://github.com/adilevi55/youtube-playlist" class="fa fa-github"
-                            style="font-size:24px"></a>
+                <div class="row project-card">
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/image/.png">
+
+                    </div>
+                    <div class="project-card-text col-12 col-md-6">
+                        <h3>Youtube Playlist</h3>
+                        <p>
+                            in this website you can register login, create youtube playlist delete youtube playlist.
+                            php, html5, css, mysql
+                        </p>
+                        <div class="project-card-buttons">
+                            <a href="https://github.com/adilevi55/youtube-playlist" target="_blank" class="btn  btn-primary">Live Privue</a>
+                         <button href="#" disabled="true" target="_blank" class="btn  btn-info project-card-btn-disabled">View Code</button>
+                         </div>
                     </div>
                 </div>
+                <div class="row project-card">
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/image/shoppingStore.png">
 
-                <div class="card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" style="width: 18rem;">
-                    <img src="./assets/image/shoppingStore.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Shopping Store</h5>
-                        <p class="card-text">this website is FULL SERVICE Grocery Store.
+                    </div>
+                    <div class="project-card-text col-12 col-md-6">
+                        <h3>Shopping Store</h3>
+                        <p>
+                            this website is FULL SERVICE Grocery Store.
                             you can register login.
                             add products to the grocery and delete them.
                             order grocery.
                             full amin platform you can add products to the site and change exist products.<br>
-                            Angular 5, NodeJs, MonogDB (mongoose),CSS3,HTML5</p>
-                        <a href="https://github.com/adilevi55/FullStackAngularNodeJS" class="fa fa-github" style="font-size:24px"></a>
+                            Angular 5, NodeJs, MonogDB (mongoose),CSS3,HTML5
+                        </p>
+                        <div class="project-card-buttons">
+                            <a href="https://github.com/adilevi55/FullStackAngularNodeJS" target="_blank" class="btn  btn-primary">Live Privue</a>
+                         <button href="#" disabled="true" target="_blank" class="btn  btn-info project-card-btn-disabled">View Code</button>
+                         </div>
                     </div>
                 </div>
+     
+            </div>
+          </main>
+      </section>
+
+      <section id="skillsSection">
+
+          <header>
+              <h1 class="sections-header-h1">My Skills</h1>
+          </header>
+          <main class="skill-main container-fluid ">
+              <div class="row justify-content-center">
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+            <img src="./assets/image/html5.png">
+            <p>HTML5</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+            <img src="./assets/image/CSS3.png">
+            <p>CSS3</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+            <img src="./assets/image/JQuery.png">
+            <p>JQuery</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/Bootstrap4.png">
+                <p>Bootstrap</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/json.png">
+                <p>JSON</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/Javascript.png">
+                <p>Javascript</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/TypeScript.svg">
+                <p>TypeScript</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/Angular.png">
+                <p>Angular 5</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/Node.js.png">
+                <p>Node.js</p>
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/mysql.png">
+                <p>MySQL</p>
+            
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/Mongodb.png">
+                <p>MongoDB</p>
+            
+            </div>
+            <div class="col-5 col-sm-6 col-md-3 col-lg-2 col-xl-1 card">
+                <img src="./assets/image/PHP.png">
+                <p>PHP</p>
+            
             </div>
         </div>
-    </div>
+                 
+          </main>
+      </section>
+
+      <section id="contactSection">
+          <header>
+              <h1 class="sections-header-h1">Contact Me</h1>
+          </header>
+          <main class="contact-section-main">
+              <ul class="contact-section-main-list">
+                  
+                  <li class="contact-section-main-list-item">
+                     <i href="https://www.linkedin.com/in/adi-levi-3585a2188" class="fa fa-linkedin-square"
+                     target="_blank">
+                    </i>
+                     <a href="https://www.linkedin.com/in/adi-levi-3585a2188" target="_blank">
+                        linkedin.com/in/adi-levi-3585a2188
+                    </a> 
+                  </li>
+
+                  <li class="contact-section-main-list-item">
+                     <i href="https://github.com/adilevi55" class="fa fa-github"  target="_blank">
+
+                     </i>
+                     <a href="https://github.com/adilevi55" target="_blank">
+                        github.com/adilevi55
+                    </a> 
+                </li>
+
+                  <li class="contact-section-main-list-item">
+                     <i class="fa fa-envelope-o"  target="_blank"
+                        href="mailto:adilevi55@gmail.com">
+
+                     </i>
+
+                     <a href="mailto:adilevi55@gmail.com" target="_blank">
+                        adilevi55@gmail.com
+                    </a> 
+                </li>
+              </ul>
+            </main>
+      </section>
+
+
 </body>
 
 </html>
