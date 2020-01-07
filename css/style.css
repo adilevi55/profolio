@@ -109,6 +109,9 @@ body{
 }
 .project-card-btn-disabled{
     margin-top: 1%;
+    text-decoration: line-through;
+    cursor:not-allowed;
+
 }
 #skillsSection{
     margin-top:50px;
