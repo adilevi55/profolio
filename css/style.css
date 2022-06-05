@@ -17,7 +17,7 @@ body{
 }
 .card img{
     width: 100%;
-    height:90%;
+    height:50%;
 	object-fit: contain;
 }
 #aboutMyImg{
@@ -27,10 +27,13 @@ body{
 .container *{
      margin-top: 2%;
  }
+
+ 
  a{
      color: black;
      margin: 1%;
  }
+
  .card{
      margin: 1%;
  }
@@ -55,10 +58,7 @@ body{
     margin-bottom:15px;
 }
 .nav-bar{
-    position:fixed;
-    z-index: 2;
     font-weight: bold;
-    width:100%;
 }
 .first-header{
     height: 500px;
@@ -117,6 +117,9 @@ body{
 #skillsSection{
     margin-top:50px;
 }
+#contactSection{
+    height: 75vh;
+}
 @media only screen and (max-width: 600px) {
     .contact-section-main-list-item{
         list-style: none;
@@ -139,6 +142,7 @@ body{
     #aboutMyImg{
         width: 25%;
     }
+
   }
   @media only screen and (min-width: 1400px) {
    p,a,h1,h3,button{
@@ -158,5 +162,14 @@ body{
    }
    #aboutMyImg{
     width: 15%;
-   }  
+   } 
+   .contact-section-main-list{
+    padding:0;
+    display: block;
+}
+.contact-section-main-list-item{
+    display: block;
+    margin-left: 41.2%;
+    margin-top: 1.8%;
+} 
   }
